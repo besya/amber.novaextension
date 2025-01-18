@@ -1,0 +1,54 @@
+<completions>
+  <provider>
+    <syntax>amber</syntax>
+    <exclude-selector>string, comment</exclude-selector>
+    <set>amber.std.array</set>
+  </provider>
+  <set name="amber.std.array" symbol="function">
+    <completion string="array_contains">
+      <behavior>
+        <append>($[array], $[value])</append>
+      </behavior>
+    </completion>
+    <completion string="array_extract_at">
+      <behavior>
+        <append>(ref $[array], $[index])</append>
+      </behavior>
+    </completion>
+    <completion string="array_find">
+      <behavior>
+        <append>($[array], $[value])</append>
+      </behavior>
+    </completion>
+    <completion string="array_find_all">
+      <behavior>
+        <append>($[array], $[value])</append>
+      </behavior>
+    </completion>
+    <completion string="array_first">
+      <behavior>
+        <append>($[array])</append>
+      </behavior>
+    </completion>
+    <completion string="array_last">
+      <behavior>
+        <append>($[array])</append>
+      </behavior>
+    </completion>
+    <completion string="array_pop">
+      <behavior>
+        <append>(ref $[array])</append>
+      </behavior>
+    </completion>
+    <completion string="array_remove_at">
+      <behavior>
+        <append>(ref $[array], $[index])</append>
+      </behavior>
+    </completion>
+    <completion string="array_shift">
+      <behavior>
+        <append>(ref $[array])</append>
+      </behavior>
+    </completion>
+  </set>
+</completions>

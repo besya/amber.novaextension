@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="amber">
+  <meta>
+    <name>Amber</name>
+    <type>script</type>
+    <preferred-file-extension>ab</preferred-file-extension>
+    <scriptable shebang="#!/usr/bin/env amber" />
+  </meta>
+
+  <detectors>
+    <extension priority="1.0">ab</extension>
+    <match-content lines="1" priority="0.7">\#\!.*?\bamber\b</match-content>
+  </detectors>
+
+  <indentation>
+    <increase>
+      <expression>(\{[^}\"']*$)|(\[[^\]\"']*$)|(\([^)\"']*$|:$)</expression>
+    </increase>
+    <decrease>
+      <expression>^\s*(\s*/\*.*\*/\s*)*[\}\]\)\\]</expression>
+    </decrease>
+  </indentation>
+
+  <comments>
+    <single>
+        <expression>//</expression>
+    </single>
+  </comments>
+
+  <surrounding-pairs>
+    <pair open="{" close="}" />
+    <pair open="[" close="]" />
+    <pair open="(" close=")" />
+    <pair open="'" close="'" />
+    <pair open="\" close="\" />
+    <pair open="`" close="`" />
+    <pair open="$" close="$" />
+  </surrounding-pairs>
+
+  <tree-sitter>
+    <brackets />
+    <highlights />
+    <symbols />
+    <folds />
+  </tree-sitter>
+</syntax>

@@ -1,0 +1,34 @@
+<completions>
+  <provider>
+    <syntax>amber</syntax>
+    <exclude-selector>string, comment</exclude-selector>
+    <set>amber.std.math</set>
+  </provider>
+  <set name="amber.std.math" symbol="function">
+    <completion string="math_abs">
+      <behavior>
+        <append>($[number])</append>
+      </behavior>
+    </completion>
+    <completion string="math_ceil">
+      <behavior>
+        <append>($[number])</append>
+      </behavior>
+    </completion>
+    <completion string="math_floor">
+      <behavior>
+        <append>($[number])</append>
+      </behavior>
+    </completion>
+    <completion string="math_round">
+      <behavior>
+        <append>($[number])</append>
+      </behavior>
+    </completion>
+    <completion string="math_sum">
+      <behavior>
+        <append>($[list])</append>
+      </behavior>
+    </completion>
+  </set>
+</completions>

@@ -1,0 +1,97 @@
+<completions>
+  <provider>
+    <syntax>amber</syntax>
+    <exclude-selector>string, comment</exclude-selector>
+    <set>amber.keywords</set>
+  </provider>
+  <set name="amber.keywords" symbol="keyword">
+    <completion string="import" symbol="package">
+      <behavior>
+        <append> * from "$[package]"</append>
+      </behavior>
+    </completion>
+    <completion string="import" symbol="package">
+      <behavior>
+        <append> { $[fun] } from "$[package]"</append>
+      </behavior>
+    </completion>
+    <completion string="loop">
+      <behavior>
+        <append> {$[]}</append>
+      </behavior>
+    </completion>
+    <completion string="for" symbol="statement">
+      <behavior>
+        <append> $[item] in $[items] {$[]}</append>
+      </behavior>
+    </completion>
+    <completion string="for" symbol="statement">
+      <behavior>
+        <append> $[index], $[item] in $[items] {$[]}</append>
+      </behavior>
+    </completion>
+    <completion string="return" symbol="statement"/>
+    <completion string="fun" symbol="statement"/>
+    <completion string="if">
+      <behavior>
+        <append> $[expression]: $[]</append>
+      </behavior>
+    </completion>
+    <completion string="if">
+      <behavior>
+        <append> $[expression] {$[]}</append>
+      </behavior>
+    </completion>
+    <completion string="if">
+      <behavior>
+        <append> {$[]}</append>
+      </behavior>
+    </completion>
+    <completion string="else" />
+    <completion string="else">
+      <behavior>
+        <append>: $[]</append>
+      </behavior>
+    </completion>
+    <completion string="else">
+      <behavior>
+        <append> {$[]}</append>
+      </behavior>
+    </completion>
+    <completion string="then" />
+    <completion string="break" />
+    <completion string="continue" />
+    <completion string="and" />
+    <completion string="or" />
+    <completion string="not" />
+    <completion string="let">
+      <behavior>
+        <append> $[name] = $[value]</append>
+      </behavior>
+    </completion>
+    <completion string="pub" />
+    <!-- <completion string="main" /> -->
+    <completion string="main">
+      <behavior>
+        <append> {$[]}</append>
+      </behavior>
+    </completion>
+    <completion string="main">
+      <behavior>
+        <append> ($[args]) {$[]}</append>
+      </behavior>
+    </completion>
+    <completion string="echo" />
+    <completion string="exit" />
+    <completion string="from" />
+    <completion string="as" />
+    <completion string="in" />
+    <completion string="fail" />
+    <completion string="failed" />
+    <completion string="silent" />
+    <completion string="nameof" />
+    <completion string="is" />
+    <completion string="unsafe" deprecated="true" />
+    <completion string="trust" />
+  </set>
+</completions>

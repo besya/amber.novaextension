@@ -1,0 +1,13 @@
+{
+  "identifier": "besya.amber",
+  "name": "Amber",
+  "author": "Ihar Biaspalau",
+  "organization": "Besya",
+  "description": "Syntax highlighting and code completion for Amber files",
+  "version": "1.0",
+  "categories": ["languages"],
+  "repository": "https://github.com/besya/amber.novaextension",
+  "license": "MIT",
+  "bugs": "https://github.com/besya/amber.novaextension/issues",
+  "activationEvents": ["onLanguage:amber", "onWorkspaceContains:*.ab"]
+}

@@ -1,0 +1,7 @@
+<completions>
+  <provider>
+    <syntax>amber</syntax>
+    <exclude-selector>string, comment</exclude-selector>
+    <symbols type="argument" />
+  </provider>
+</completions>

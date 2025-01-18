@@ -1,0 +1,125 @@
+<completions>
+  <provider>
+    <syntax>amber</syntax>
+    <exclude-selector>string, comment</exclude-selector>
+    <set>amber.std.env</set>
+  </provider>
+  <set name="amber.std.env" symbol="function">
+    <completion string="bold">
+      <behavior>
+        <append>($[message])</append>
+      </behavior>
+    </completion>
+    <completion string="echo_colored">
+      <behavior>
+        <append>($[message], $[color])</append>
+      </behavior>
+    </completion>
+    <completion string="echo_error">
+      <behavior>
+        <append>($[message], $[exit_code:1])</append>
+      </behavior>
+    </completion>
+    <completion string="echo_success">
+      <behavior>
+        <append>($[message])</append>
+      </behavior>
+    </completion>
+    <completion string="echo_warning">
+      <behavior>
+        <append>($[message])</append>
+      </behavior>
+    </completion>
+    <completion string="env_const_get">
+      <behavior>
+        <append>($[name])</append>
+      </behavior>
+    </completion>
+    <completion string="env_const_set">
+      <behavior>
+        <append>($[name], $[val])</append>
+      </behavior>
+    </completion>
+    <completion string="env_file_load">
+      <behavior>
+        <append>($[".env"])</append>
+      </behavior>
+    </completion>
+    <completion string="env_var_get">
+      <behavior>
+        <append>($[name])</append>
+      </behavior>
+    </completion>
+    <completion string="env_var_load">
+      <behavior>
+        <append>($[var], $[".env"])</append>
+      </behavior>
+    </completion>
+    <completion string="env_var_set">
+      <behavior>
+        <append>($[name], $[val])</append>
+      </behavior>
+    </completion>
+    <completion string="env_var_test">
+      <behavior>
+        <append>($[name])</append>
+      </behavior>
+    </completion>
+    <completion string="env_var_unset">
+      <behavior>
+        <append>($[name])</append>
+      </behavior>
+    </completion>
+    <completion string="escaped">
+      <behavior>
+        <append>($[text])</append>
+      </behavior>
+    </completion>
+    <completion string="has_failed">
+      <behavior>
+        <append>($[command])</append>
+      </behavior>
+    </completion>
+    <completion string="input_confirm">
+      <behavior>
+        <append>($[prompt], $[default_yes:false])</append>
+      </behavior>
+    </completion>
+    <completion string="input_hidden">
+      <behavior>
+        <append>($[prompt])</append>
+      </behavior>
+    </completion>
+    <completion string="input_prompt">
+      <behavior>
+        <append>($[prompt])</append>
+      </behavior>
+    </completion>
+    <completion string="is_command">
+      <behavior>
+        <append>($[command])</append>
+      </behavior>
+    </completion>
+    <completion string="is_root()" />
+    <completion string="italic">
+      <behavior>
+        <append>($[message])</append>
+      </behavior>
+    </completion>
+    <completion string="printf">
+      <behavior>
+        <append>($[format], $[args:\[""\]])</append>
+      </behavior>
+    </completion>
+    <completion string="styled">
+      <behavior>
+        <append>($[message], $[style], $[fg], $[gb])</append>
+      </behavior>
+    </completion>
+    <completion string="underlined">
+      <behavior>
+        <append>($[message])</append>
+      </behavior>
+    </completion>
+  </set>
+</completions>

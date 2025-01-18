@@ -1,0 +1,12 @@
+<completions>
+  <provider>
+    <syntax>amber</syntax>
+    <exclude-selector>string, comment</exclude-selector>
+    <set>amber.constants</set>
+  </provider>
+  <set name="amber.constants" symbol="constant">
+    <completion string="true" />
+    <completion string="false" />
+    <completion string="null" />
+  </set>
+</completions>

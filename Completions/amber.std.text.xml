@@ -1,0 +1,149 @@
+<completions>
+  <provider>
+    <syntax>amber</syntax>
+    <exclude-selector>string, comment</exclude-selector>
+    <set>amber.std.text</set>
+  </provider>
+  <set name="amber.std.text" symbol="function">
+    <completion string="capitalized">
+      <behavior>
+        <append>($[text])</append>
+      </behavior>
+    </completion>
+    <completion string="char_at">
+      <behavior>
+        <append>($[text], $[index])</append>
+      </behavior>
+    </completion>
+    <completion string="ends_with">
+      <behavior>
+        <append>($[text], $[suffix])</append>
+      </behavior>
+    </completion>
+    <completion string="join">
+      <behavior>
+        <append>($[list], $[delimiter])</append>
+      </behavior>
+    </completion>
+    <completion string="lowercase">
+      <behavior>
+        <append>($[text])</append>
+      </behavior>
+    </completion>
+    <completion string="lpad">
+      <behavior>
+        <append>($[text], $[pad], $[length])</append>
+      </behavior>
+    </completion>
+    <completion string="match_regex">
+      <behavior>
+        <append>($[source], $[search], $[extended:false])</append>
+      </behavior>
+    </completion>
+    <completion string="match_regex_any">
+      <behavior>
+        <append>($[text], $[terms])</append>
+      </behavior>
+    </completion>
+    <completion string="parse_number">
+      <behavior>
+        <append>($[text])</append>
+      </behavior>
+    </completion>
+    <completion string="replace">
+      <behavior>
+        <append>($[source], $[search], $[replace])</append>
+      </behavior>
+    </completion>
+    <completion string="replace_one">
+      <behavior>
+        <append>($[source], $[search], $[replace])</append>
+      </behavior>
+    </completion>
+    <completion string="replace_regex">
+      <behavior>
+        <append>($[source], $[search], $[replace], $[extended:false])</append>
+      </behavior>
+    </completion>
+    <completion string="reversed">
+      <behavior>
+        <append>($[text])</append>
+      </behavior>
+    </completion>
+    <completion string="rpad">
+      <behavior>
+        <append>($[text], $[pad], $[length])</append>
+      </behavior>
+    </completion>
+    <completion string="slice">
+      <behavior>
+        <append>($[text], $[index], $[length:0])</append>
+      </behavior>
+    </completion>
+    <completion string="split">
+      <behavior>
+        <append>($[text], $[delimiter])</append>
+      </behavior>
+    </completion>
+    <completion string="split_chars">
+      <behavior>
+        <append>($[text])</append>
+      </behavior>
+    </completion>
+    <completion string="split_lines">
+      <behavior>
+        <append>($[text])</append>
+      </behavior>
+    </completion>
+    <completion string="split_words">
+      <behavior>
+        <append>($[text])</append>
+      </behavior>
+    </completion>
+    <completion string="starts_with">
+      <behavior>
+        <append>($[text], $[prefix])</append>
+      </behavior>
+    </completion>
+    <completion string="text_contains">
+      <behavior>
+        <append>($[text], $[phrase])</append>
+      </behavior>
+    </completion>
+    <completion string="text_contains_all">
+      <behavior>
+        <append>($[text], $[terms])</append>
+      </behavior>
+    </completion>
+    <completion string="text_contains_any">
+      <behavior>
+        <append>($[text], $[terms])</append>
+      </behavior>
+    </completion>
+    <completion string="trim">
+      <behavior>
+        <append>($[text])</append>
+      </behavior>
+    </completion>
+    <completion string="trim_left">
+      <behavior>
+        <append>($[text])</append>
+      </behavior>
+    </completion>
+    <completion string="trim_right">
+      <behavior>
+        <append>($[text])</append>
+      </behavior>
+    </completion>
+    <completion string="uppercase">
+      <behavior>
+        <append>($[text])</append>
+      </behavior>
+    </completion>
+    <completion string="zfill">
+      <behavior>
+        <append>($[text], $[length])</append>
+      </behavior>
+    </completion>
+  </set>
+</completions>

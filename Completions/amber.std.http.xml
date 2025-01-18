@@ -1,0 +1,14 @@
+<completions>
+  <provider>
+    <syntax>amber</syntax>
+    <exclude-selector>string, comment</exclude-selector>
+    <set>amber.std.http</set>
+  </provider>
+  <set name="amber.std.http" symbol="function">
+    <completion string="file_download">
+      <behavior>
+        <append>($[url], $[path])</append>
+      </behavior>
+    </completion>
+  </set>
+</completions>

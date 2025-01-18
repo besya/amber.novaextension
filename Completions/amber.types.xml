@@ -1,0 +1,13 @@
+<completions>
+  <provider>
+    <syntax>amber</syntax>
+    <exclude-selector>string, comment</exclude-selector>
+    <set>amber.types</set>
+  </provider>
+  <set name="amber.types" symbol="type">
+    <completion string="Text" />
+    <completion string="Num" />
+    <completion string="Bool" />
+    <completion string="Null" />
+  </set>
+</completions>

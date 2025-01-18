@@ -1,0 +1,25 @@
+<completions>
+  <provider>
+    <syntax>amber</syntax>
+    <exclude-selector>string, comment</exclude-selector>
+    <set>amber.std.date</set>
+  </provider>
+  <set name="amber.std.date" symbol="function">
+    <completion string="date_add">
+      <behavior>
+        <append>($[add], $[date:""], $[utc:false])</append>
+      </behavior>
+    </completion>
+    <completion string="date_compare">
+      <behavior>
+        <append>($[date_a], $[date_b:""], $[utc:false])</append>
+      </behavior>
+    </completion>
+    <completion string="date_now()" />
+    <completion string="date_posix">
+      <behavior>
+        <append>($[format:""], $[date:""], $[utc:false])</append>
+      </behavior>
+    </completion>
+  </set>
+</completions>

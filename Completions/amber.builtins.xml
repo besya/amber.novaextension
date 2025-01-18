@@ -1,0 +1,29 @@
+<completions>
+  <provider>
+    <syntax>amber</syntax>
+    <exclude-selector>string, comment</exclude-selector>
+    <set>amber.builtins</set>
+  </provider>
+  <set name="amber.builtins" symbol="function">
+    <completion string="cd">
+      <behavior>
+        <append> $[path]</append>
+      </behavior>
+    </completion>
+    <completion string="len">
+      <behavior>
+        <append>($[])</append>
+      </behavior>
+    </completion>
+    <completion string="lines">
+      <behavior>
+        <append>($[])</append>
+      </behavior>
+    </completion>
+    <completion string="mv">
+      <behavior>
+        <append> $[source] $[target]</append>
+      </behavior>
+    </completion>
+  </set>
+</completions>
